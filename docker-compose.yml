@@ -1,0 +1,15 @@
+version: '2'
+services:
+  dnsmasq:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    image: dnsmasq:build
+    ports:
+    - 53:53
+    volumes:
+    - ./dnsmasq.conf:/etc/dnsmasq.conf
+    environment:
+    - ADDRESS_1=/1.orange.bj.doupai.vpc/10.12.4.11
+    - ADDRESS_2=/2.orange.bj.doupai.vpc/10.12.4.12
+    - ADDRESS_3=/3.orange.bj.doupai.vpc/10.12.4.13
