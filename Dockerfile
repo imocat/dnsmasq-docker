@@ -20,4 +20,6 @@ RUN date \
 
 COPY dnsmasq.conf /etc/dnsmasq.conf
 
+EXPOSE 53
+
 ENTRYPOINT "/usr/bin/${ENTRYPOINT}"
