@@ -10,6 +10,6 @@ services:
     volumes:
     - ./dnsmasq.conf:/etc/dnsmasq.conf
     environment:
-    - ADDRESS_1=/1.orange.bj.doupai.vpc/10.12.4.11
-    - ADDRESS_2=/2.orange.bj.doupai.vpc/10.12.4.12
-    - ADDRESS_3=/3.orange.bj.doupai.vpc/10.12.4.13
+    - ADDRESS_1=/1.orange.com/192.168.1.1
+    - ADDRESS_2=/2.orange.com/192.168.1.2
+    - ADDRESS_3=/3.orange.com/192.168.1.3
